@@ -57,6 +57,9 @@
                 </p>
             </div>
         </div>
+        <div class="vochabulary-set">
+            <span>+</span>
+        </div>
     </div>
   </template>
   
@@ -76,7 +79,7 @@
         width: 200px;
         background-color: rgb(42, 42, 42);
         align-items: center;
-        padding: 15px 0px;
+        padding-top: 15px;
     }  
     .vochabulary-set .title{
         background: linear-gradient(45deg,#E9A9FF,#5585FF);
@@ -120,7 +123,27 @@
         font-size: 22px;
         align-self: flex-end;
         color: white;
+        margin-bottom: -10px;
     }
+    .vochabulary-set:last-child{
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+        background: linear-gradient(#2f2f2f, #2f2f2f) padding-box, linear-gradient(45deg, #E9A9FF,#5585FF) border-box;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+    .vochabulary-set:last-child:hover{
+        background: linear-gradient(#535353, #535353) padding-box, linear-gradient(45deg, #E9A9FF,#5585FF) border-box;
+    }
+    .vochabulary-set:last-child span{
+        font-size: 70px;
+        background: linear-gradient(45deg,#E9A9FF,#5585FF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        padding: 0px;
+        
+    } 
     .complete-rate span:first-child{
         color: #E9A9FF;
     } 
@@ -159,5 +182,5 @@
     .background-2{
         background: linear-gradient(45deg,#E9A9FF,#5585FF);
     }
-  
+    
 </style>
